@@ -1,0 +1,13 @@
+{
+  "data_mode": "demo",
+  "courses": [
+    {"course_id":"COURSE-DEMO-001","course_name":"电影艺术赏析","category":"通识课","rating":4.7,"review_count":86,"workload":"较低","attendance_policy":"模拟评价：偶尔点名","attendance_requirement":"occasional","assessment":"课堂参与30% + 期末影评70%","tags":["艺术","通识","影评"],"summary":"模拟评价认为课程内容直观，适合对电影文化感兴趣的同学。"},
+    {"course_id":"COURSE-DEMO-002","course_name":"科学技术史","category":"通识课","rating":4.5,"review_count":64,"workload":"中等","attendance_policy":"模拟评价：通常点名","attendance_requirement":"required","assessment":"小组展示40% + 课程论文60%","tags":["历史","科技","通识"],"summary":"模拟评价认为知识覆盖面广，需要完成一次小组展示。"},
+    {"course_id":"COURSE-DEMO-003","course_name":"音乐鉴赏","category":"通识课","rating":4.8,"review_count":112,"workload":"较低","attendance_policy":"模拟评价：不定期点名","attendance_requirement":"occasional","assessment":"课堂参与40% + 鉴赏报告60%","tags":["音乐","艺术","通识"],"summary":"模拟评价认为课堂氛围轻松，但鉴赏报告需要结合课程内容。"},
+    {"course_id":"COURSE-DEMO-004","course_name":"人工智能导论","category":"专业拓展课","rating":4.6,"review_count":95,"workload":"较高","attendance_policy":"模拟评价：通常不点名","attendance_requirement":"occasional","assessment":"实验50% + 期末项目50%","tags":["人工智能","编程","项目"],"summary":"模拟评价认为实践性强，需要一定编程基础并完成期末项目。"},
+    {"course_id":"COURSE-DEMO-005","course_name":"心理健康与成长","category":"通识课","rating":4.4,"review_count":73,"workload":"中等","attendance_policy":"模拟评价：每次签到","attendance_requirement":"required","assessment":"课堂活动50% + 反思报告50%","tags":["心理","成长","通识"],"summary":"模拟评价认为互动较多，需持续参与课堂活动。"},
+    {"course_id":"COURSE-DEMO-006","course_name":"岭南文化概论","category":"通识课","rating":4.3,"review_count":51,"workload":"中等","attendance_policy":"模拟评价：偶尔点名","attendance_requirement":"occasional","assessment":"读书报告40% + 期末论文60%","tags":["岭南","文化","历史","通识"],"summary":"模拟评价认为地方文化案例丰富，阅读与写作任务适中。"},
+    {"course_id":"COURSE-DEMO-007","course_name":"摄影与视觉表达","category":"通识课","rating":4.6,"review_count":42,"workload":"较低","attendance_policy":"模拟评价：不点名","attendance_requirement":"none","assessment":"摄影作品集80% + 反思报告20%","tags":["摄影","艺术","通识"],"summary":"模拟课程评价：未要求点名，作业量较低；不代表真实开课政策。"},
+    {"course_id":"COURSE-DEMO-008","course_name":"中华诗词鉴赏","category":"通识课","rating":4.5,"review_count":38,"workload":"较低","attendance_policy":"模拟评价：不点名","attendance_requirement":"none","assessment":"读诗札记40% + 期末赏析60%","tags":["文学","诗词","通识"],"summary":"模拟课程评价：未要求点名，作业量较低；不代表真实开课政策。"}
+  ]
+}

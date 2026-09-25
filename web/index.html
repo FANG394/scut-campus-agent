@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="华工校园助手阶段 1–5 本地演示：基础对话、知识库问答、MCP 工具、多步骤任务执行与多 Agent 协作。"
+    />
+    <title>华工校园助手 · 阶段 1–5 Demo</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="./" aria-label="返回华工校园助手首页">
+          <span class="brand-mark" aria-hidden="true">华</span>
+          <span class="brand-copy">
+            <strong>华工校园助手</strong>
+            <span>SCUT Campus Agent</span>
+          </span>
+        </a>
+
+        <div class="stage-badge" aria-label="当前开发阶段">
+          <span class="stage-dot" aria-hidden="true"></span>
+          阶段 1 · 2 · 3 · 4 · 5 本地 Demo
+        </div>
+
+        <div class="header-actions">
+          <button class="button button-quiet" id="rebuildButton" type="button">
+            <span class="button-icon" aria-hidden="true">↻</span>
+            <span class="button-label">重建知识库</span>
+          </button>
+          <button class="button button-quiet" id="clearButton" type="button">
+            <span class="button-icon" aria-hidden="true">⌫</span>
+            <span class="button-label">清空会话</span>
+          </button>
+        </div>
+      </header>
+
+      <section class="statusbar" aria-label="服务状态">
+        <div class="status-item" id="modelStatus" data-state="loading">
+          <span class="status-indicator" aria-hidden="true"></span>
+          <span class="status-label">模型</span>
+          <strong class="status-value">连接中…</strong>
+        </div>
+        <span class="status-divider" aria-hidden="true"></span>
+        <div class="status-item" id="knowledgeStatus" data-state="loading">
+          <span class="status-indicator" aria-hidden="true"></span>
+          <span class="status-label">知识库</span>
+          <strong class="status-value">读取中…</strong>
+        </div>
+        <span class="status-divider" aria-hidden="true"></span>
+        <div class="status-item" id="toolingStatus" data-state="loading">
+          <span class="status-indicator" aria-hidden="true"></span>
+          <span class="status-label">MCP 工具</span>
+          <strong class="status-value">读取中…</strong>
+        </div>
+        <span class="status-divider" aria-hidden="true"></span>
+        <div class="status-item" id="agentStatus" data-state="loading">
+          <span class="status-indicator" aria-hidden="true"></span>
+          <span class="status-label">多 Agent</span>
+          <strong class="status-value">读取中…</strong>
+        </div>
+        <button class="status-refresh" id="healthButton" type="button" aria-label="刷新服务状态">
+          刷新状态
+        </button>
+      </section>
+
+      <main class="chat-main">
+        <div class="conversation" id="conversation" aria-live="polite" aria-label="对话内容">
+          <section class="welcome" id="welcomePanel">
+            <div class="welcome-mark" aria-hidden="true">AI</div>
+            <p class="eyebrow">知识增强 · MCP 工具 · 3 Agent 协作</p>
+            <h1>今天想了解什么校园事项？</h1>
+            <p class="welcome-copy">
+              我会优先检索本地校园知识库；复杂任务由 Planner、Executor、Reviewer 三个 Agent 依次规划、执行和复核。
+            </p>
+
+            <div class="demo-notice" role="note">
+              <span aria-hidden="true">i</span>
+              <p>
+                多 Agent 流程与工具调用均为本地功能演示；二手书、课表、开课信息和课程评价是明确标注的模拟业务数据，不代表真实校园结果。
+              </p>
+            </div>
+
+            <div class="suggestions" aria-label="推荐问题">
+              <p>可以这样问</p>
+              <div class="suggestion-grid">
+                <button class="suggestion" type="button" data-question="校园网怎么开通？">
+                  <span class="suggestion-symbol" aria-hidden="true">网</span>
+                  <span>
+                    <strong>校园网怎么开通？</strong>
+                    <small>入学与网络服务</small>
+                  </span>
+                  <span class="suggestion-arrow" aria-hidden="true">→</span>
+                </button>
+                <button class="suggestion" type="button" data-question="公共自习室允许占座吗？">
+                  <span class="suggestion-symbol" aria-hidden="true">习</span>
+                  <span>
+                    <strong>公共自习室允许占座吗？</strong>
+                    <small>自习室管理办法</small>
+                  </span>
+                  <span class="suggestion-arrow" aria-hidden="true">→</span>
+                </button>
+                <button class="suggestion" type="button" data-question="帮我找一本30元以内的高等数学二手书。">
+                  <span class="suggestion-symbol" aria-hidden="true">书</span>
+                  <span>
+                    <strong>找高等数学二手书</strong>
+                    <small>MCP · 模拟二手交易</small>
+                  </span>
+                  <span class="suggestion-arrow" aria-hidden="true">→</span>
+                </button>
+                <button class="suggestion" type="button" data-question="查询 DEMO001 周二的课表。">
+                  <span class="suggestion-symbol" aria-hidden="true">课</span>
+                  <span>
+                    <strong>查询周二课表</strong>
+                    <small>MCP · 匿名模拟课表</small>
+                  </span>
+                  <span class="suggestion-arrow" aria-hidden="true">→</span>
+                </button>
+                <button class="suggestion" type="button" data-question="电影艺术赏析的课程评价怎么样？">
+                  <span class="suggestion-symbol" aria-hidden="true">评</span>
+                  <span>
+                    <strong>查询课程评价</strong>
+                    <small>MCP · 模拟评价汇总</small>
+                  </span>
+                  <span class="suggestion-arrow" aria-hidden="true">→</span>
+                </button>
+                <button class="suggestion" type="button" data-question="用多 Agent 为 DEMO001 推荐周二下午不冲突、评分高的通识课">
+                  <span class="suggestion-symbol" aria-hidden="true">选</span>
+                  <span>
+                    <strong>用多 Agent 推荐通识课</strong>
+                    <small>规划 · 执行工具 · 独立复核</small>
+                  </span>
+                  <span class="suggestion-arrow" aria-hidden="true">→</span>
+                </button>
+                <button class="suggestion" type="button" data-question="比较高数和线代二手书，总预算50元">
+                  <span class="suggestion-symbol" aria-hidden="true">比</span>
+                  <span>
+                    <strong>50 元内比较高数和线代</strong>
+                    <small>多次检索 · 预算筛选 · 汇总方案</small>
+                  </span>
+                  <span class="suggestion-arrow" aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <div class="message-list" id="messageList"></div>
+        </div>
+      </main>
+
+      <div class="composer-wrap">
+        <form class="composer" id="chatForm">
+          <label class="sr-only" for="messageInput">输入你的校园问题</label>
+          <textarea
+            id="messageInput"
+            name="message"
+            rows="1"
+            maxlength="2000"
+            placeholder="输入问题，例如：找一本30元以内的高等数学二手书"
+            autocomplete="off"
+          ></textarea>
+          <button class="send-button" id="sendButton" type="submit" aria-label="发送消息">
+            <span class="send-label">发送</span>
+            <span class="send-arrow" aria-hidden="true">↑</span>
+          </button>
+        </form>
+        <p class="composer-note">
+          Enter 发送 · Shift + Enter 换行　<span aria-hidden="true">·</span>　请勿输入密码、验证码、身份证号或学号
+        </p>
+      </div>
+    </div>
+
+    <div class="toast-region" id="toastRegion" aria-live="assertive" aria-atomic="true"></div>
+    <script src="./app.js" defer></script>
+  </body>
+</html>

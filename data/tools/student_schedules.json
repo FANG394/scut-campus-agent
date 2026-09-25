@@ -1,0 +1,29 @@
+{
+  "data_mode": "demo",
+  "students": [
+    {
+      "student_alias": "DEMO001",
+      "semester": "2026-2027-1",
+      "courses": [
+        {"course_name":"高等数学A（一）","weekday":"周一","period":"1-2节","start_time":"08:30","end_time":"10:05","location":"A1-101（模拟）","campus":"五山校区","weeks":"1-16周"},
+        {"course_name":"大学英语（一）","weekday":"周一","period":"5-6节","start_time":"14:00","end_time":"15:35","location":"A2-203（模拟）","campus":"五山校区","weeks":"1-16周"},
+        {"course_name":"程序设计基础","weekday":"周二","period":"1-2节","start_time":"08:30","end_time":"10:05","location":"实验楼B-302（模拟）","campus":"五山校区","weeks":"1-16周"},
+        {"course_name":"思想道德与法治","weekday":"周二","period":"7-8节","start_time":"16:00","end_time":"17:35","location":"A1-205（模拟）","campus":"五山校区","weeks":"1-16周"},
+        {"course_name":"大学体育（一）","weekday":"周三","period":"3-4节","start_time":"10:25","end_time":"12:00","location":"西区运动场（模拟）","campus":"五山校区","weeks":"1-16周"},
+        {"course_name":"线性代数","weekday":"周四","period":"3-4节","start_time":"10:25","end_time":"12:00","location":"A2-105（模拟）","campus":"五山校区","weeks":"1-16周"},
+        {"course_name":"工程导论","weekday":"周五","period":"5-6节","start_time":"14:00","end_time":"15:35","location":"A1-301（模拟）","campus":"五山校区","weeks":"1-8周"}
+      ]
+    },
+    {
+      "student_alias": "DEMO002",
+      "semester": "2026-2027-1",
+      "courses": [
+        {"course_name":"概率论与数理统计","weekday":"周一","period":"3-4节","start_time":"10:25","end_time":"12:00","location":"B1-202（模拟）","campus":"大学城校区","weeks":"1-16周"},
+        {"course_name":"数据结构","weekday":"周二","period":"5-6节","start_time":"14:00","end_time":"15:35","location":"B2-304（模拟）","campus":"大学城校区","weeks":"1-16周"},
+        {"course_name":"计算机网络","weekday":"周三","period":"1-2节","start_time":"08:30","end_time":"10:05","location":"B1-104（模拟）","campus":"大学城校区","weeks":"1-16周"},
+        {"course_name":"创新创业基础","weekday":"周四","period":"7-8节","start_time":"16:00","end_time":"17:35","location":"B3-201（模拟）","campus":"大学城校区","weeks":"1-8周"},
+        {"course_name":"形势与政策","weekday":"周五","period":"3-4节","start_time":"10:25","end_time":"12:00","location":"B1-305（模拟）","campus":"大学城校区","weeks":"9-12周"}
+      ]
+    }
+  ]
+}

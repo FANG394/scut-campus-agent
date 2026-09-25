@@ -1,0 +1,17 @@
+{
+  "data_mode": "demo",
+  "offerings": [
+    {"offering_id":"OFFERING-DEMO-001","course_id":"COURSE-DEMO-001","course_name":"电影艺术赏析","category":"通识课","semester":"2026-2027-1","campus":"五山校区","location":"A1-401（模拟）","meetings":[{"weekday":"周二","start_time":"14:00","end_time":"15:35","week_start":1,"week_end":16}]},
+    {"offering_id":"OFFERING-DEMO-002","course_id":"COURSE-DEMO-002","course_name":"科学技术史","category":"通识课","semester":"2026-2027-1","campus":"五山校区","location":"A1-402（模拟）","meetings":[{"weekday":"周二","start_time":"16:00","end_time":"17:35","week_start":1,"week_end":16}]},
+    {"offering_id":"OFFERING-DEMO-003","course_id":"COURSE-DEMO-003","course_name":"音乐鉴赏","category":"通识课","semester":"2026-2027-1","campus":"五山校区","location":"艺术楼201（模拟）","meetings":[{"weekday":"周二","start_time":"14:00","end_time":"15:35","week_start":1,"week_end":16}]},
+    {"offering_id":"OFFERING-DEMO-004","course_id":"COURSE-DEMO-004","course_name":"人工智能导论","category":"专业拓展课","semester":"2026-2027-1","campus":"大学城校区","location":"B2-401（模拟）","meetings":[{"weekday":"周四","start_time":"14:00","end_time":"15:35","week_start":1,"week_end":16}]},
+    {"offering_id":"OFFERING-DEMO-005","course_id":"COURSE-DEMO-005","course_name":"心理健康与成长","category":"通识课","semester":"2026-2027-1","campus":"大学城校区","location":"B1-401（模拟）","meetings":[{"weekday":"周二","start_time":"16:00","end_time":"17:35","week_start":1,"week_end":16}]},
+    {"offering_id":"OFFERING-DEMO-006","course_id":"COURSE-DEMO-006","course_name":"岭南文化概论","category":"通识课","semester":"2026-2027-1","campus":"五山校区","location":"A2-402（模拟）","meetings":[{"weekday":"周二","start_time":"15:35","end_time":"17:10","week_start":9,"week_end":16}]},
+    {"offering_id":"OFFERING-DEMO-007","course_id":"COURSE-DEMO-007","course_name":"摄影与视觉表达","category":"通识课","semester":"2026-2027-1","campus":"五山校区","location":"艺术楼301（模拟）","meetings":[{"weekday":"周二","start_time":"14:00","end_time":"15:35","week_start":1,"week_end":16}]},
+    {"offering_id":"OFFERING-DEMO-008","course_id":"COURSE-DEMO-007","course_name":"摄影与视觉表达","category":"通识课","semester":"2026-2027-1","campus":"五山校区","location":"艺术楼302（模拟）","meetings":[{"weekday":"周二","start_time":"16:00","end_time":"17:35","week_start":1,"week_end":16}]},
+    {"offering_id":"OFFERING-DEMO-009","course_id":"COURSE-DEMO-008","course_name":"中华诗词鉴赏","category":"通识课","semester":"2026-2027-1","campus":"大学城校区","location":"B3-402（模拟）","meetings":[{"weekday":"周二","start_time":"16:00","end_time":"17:35","week_start":1,"week_end":16}]},
+    {"offering_id":"OFFERING-DEMO-010","course_id":"COURSE-DEMO-008","course_name":"中华诗词鉴赏","category":"通识课","semester":"2026-2027-1","campus":"大学城校区","location":"B3-403（模拟）","meetings":[{"weekday":"周二","start_time":"14:00","end_time":"15:35","week_start":1,"week_end":16}]},
+    {"offering_id":"OFFERING-DEMO-011","course_id":"COURSE-DEMO-009","course_name":"城市生态观察","category":"通识课","semester":"2026-2027-1","campus":"五山校区","location":"A3-201（模拟）","meetings":[{"weekday":"周二","start_time":"14:00","end_time":"15:35","week_start":9,"week_end":16}]},
+    {"offering_id":"OFFERING-DEMO-012","course_id":"COURSE-DEMO-010","course_name":"科学阅读与表达","category":"通识课","semester":"2026-2027-1","campus":"五山校区","location":"待公布（模拟）","meetings":[]}
+  ]
+}

@@ -1,0 +1,33 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local build, review, backup, and downloaded dependency workspaces.
+tmp/
+backups/
+.codex_doc_review/
+*.log
+
+# Generated knowledge index is rebuilt from the user's local source corpus.
+data/knowledge/index/*
+!data/knowledge/index/.gitkeep
+
+# The public repository ships code and ingestion instructions, not the local
+# source corpus. This avoids publishing document author metadata or material
+# whose redistribution rights have not been reviewed.
+data/knowledge/source/*
+!data/knowledge/source/.gitkeep
