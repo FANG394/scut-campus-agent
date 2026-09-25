@@ -139,7 +139,7 @@ python -m campus_agent ingest --force
 python -m pip install -r requirements-pdf.txt
 ```
 
-扫描 PDF 暂不自动 OCR。本项目为当前学生手册保存了与原 PDF 同步生成的 `.pdf.txt` 文本缓存，使未安装 `pypdf` 的运行环境仍可检索；新增 PDF 若没有缓存，仍需安装可选依赖。`体测.docx` 中的两张图片评分表另有逐格人工转录的 `.docx.ocr.txt` 检索缓存，仍沿用原文档的待核验状态。完整元数据格式、审核建议和更新流程见 `docs/KNOWLEDGE_INGESTION.md`。
+扫描 PDF 暂不自动 OCR。本地开发验收曾使用与原 PDF 同步生成的 `.pdf.txt` 文本缓存，以及经人工复核的 `.docx.ocr.txt` 图片文字缓存；这些本地缓存不随公开仓库提交。新增 PDF 若没有文本缓存，仍需安装可选依赖；为 DOCX 图片提供转录缓存时，权威级别和核验状态必须继承原文档。完整元数据格式、审核建议和更新流程见 `docs/KNOWLEDGE_INGESTION.md`。
 
 ## 目录结构
 
